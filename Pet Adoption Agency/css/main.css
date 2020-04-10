@@ -1,0 +1,745 @@
+
+/* Importing Poppins font from Google Fonts. */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+/* Resetting any pre-set browser styling. */
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+header{
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: steelblue;
+    padding: 0.72rem 0;
+    z-index: 1000;
+
+
+}
+
+nav{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.logo img{
+
+    width: 50px;
+
+}
+
+#main{
+
+    margin-top: 78px;
+
+}
+
+.container{
+
+    max-width: 1024px;
+    text-align: center;
+    margin: 0 auto;
+
+
+}
+
+.nav-links {
+
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+
+}
+
+.nav-links a{
+
+    text-decoration: none;
+    color: bisque;
+    padding: 1rem 1.75rem;
+    border-radius: 5px;
+
+}
+
+.nav-links a:hover{
+
+
+    color: black;
+    background: skyblue;
+    
+
+}
+
+footer{
+
+    background: steelblue;
+    padding: 25px;
+
+}
+
+footer .footer-logo img{
+
+    width: 80px;
+
+}
+
+
+
+footer .container{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+
+}
+
+footer  h3{
+
+    color:bisque;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    border-bottom: 1px solid bisque;
+    margin-bottom: 1.5rem;
+
+}
+
+
+.footer-logo{
+
+    display: flex;
+    justify-content: center;
+    width: 20%;
+
+}
+
+.footer-links{
+
+    list-style: none;
+    color: bisque;
+
+}
+
+.footer-links li{
+
+    font-size: 0.85rem;
+
+}
+
+footer .location p{
+
+    color: bisque;
+
+}
+
+#banner-img{
+
+    width: 100%;
+    height: 55vh;
+    background-image: url('../img/landing-page-banner.jpeg');
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+}
+
+.landing h1{
+
+    color: peachpuff;
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-bottom: 1.3rem;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4);
+
+}
+
+
+.landing p{
+
+    font-size: 1.35rem;
+
+}
+
+#adoption{
+
+    background: lightgray;
+    height: 550px;
+    border-top: 4px solid bisque;
+    border-bottom: 4px solid bisque;
+
+}
+
+
+.adoption-landing h2{
+
+    padding: 1.75rem 0;
+    font-weight: lighter;
+
+}
+
+.main-pets{
+
+    padding-top: 1.75rem;
+
+}
+
+.pet-cell{
+
+    width: 100%;
+    height: 350px;
+
+}
+
+
+.main-pets .pet-cell img{
+
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+    display:block;
+    margin: 0 auto;
+   
+
+}
+
+.pet-cell p{
+
+    margin-bottom: 1.25rem;
+    font-size: 1.3rem;
+
+}
+
+.pet-cell a{
+
+    text-decoration: none;
+    color: bisque;
+    background: steelblue;
+    border-radius: 5px;
+    padding: 0.5rem;
+    
+}
+
+.pet-cell a:hover{
+
+    color: black;
+    background: skyblue;
+
+}
+
+
+/* About us page. */
+
+#about{
+
+    width: 100%;
+    background: #fff;
+
+}
+
+#about .container h1{
+
+    padding-top:1.3rem;
+    font-weight: lighter;
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+
+}
+
+.figure-flex{
+
+    margin: 2.5rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.img-container{
+
+    width: 250px;
+    height: 250px;
+    margin-bottom: 1.25rem;
+
+}
+
+.img-container img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    border-radius: 5px;
+
+}
+
+figcaption{
+
+    font-size: 1.15rem;
+    border-bottom: 1px solid black;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.table-info{
+
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+
+}
+
+.table-info table{
+
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+
+}
+
+
+.table-info table td{
+
+    padding: 15px;
+    border: 2px solid bisque;
+    margin: 10px;
+    width: 33%;
+
+}
+
+.table-about{
+
+    background: bisque;
+    font-weight: bold;
+    
+
+}
+
+blockquote{
+
+    font-size: 1.2rem;
+
+}
+
+#adopt{
+
+     width: 100%;
+    background: #fff;
+
+}
+
+#adopt h1{
+
+    padding-top: 1.3rem;
+    font-weight: lighter;
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+}
+
+.flex-pets{
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.25rem;
+
+}
+
+.pet-desc{
+
+    display: flex;
+    flex-direction: row;
+    border: 2px solid bisque;
+    margin-bottom: 1.25rem;
+    min-height: 300px;
+
+
+}
+
+.pet-desc .img-pet-container{
+
+    width: 300px;
+
+}
+
+.pet-desc .img-pet-container img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+
+}
+
+.pet-info{
+
+    margin: auto 0;
+    padding: 15px;
+
+}
+
+.pet-info h3{
+
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin-bottom: 1.15rem;
+
+}
+
+.pet-content{
+
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+.pet-info p{
+
+    margin-bottom: 1rem;
+
+}
+
+.personality {
+
+    margin-bottom: 1.25rem;
+
+}
+
+.personality ul li{
+
+    list-style-position: inside;
+
+}
+
+.pet-info button{
+
+    padding: 0.5rem 4rem;
+    border: none;
+    color: bisque;
+    background: steelblue;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    margin-bottom: 0.45rem;
+    cursor: pointer;
+
+}
+
+.pet-info button:hover{
+
+    color: black;
+    background: skyblue;
+
+}
+
+.thank-you-1, .thank-you-2, .thank-you-3, .thank-you-4, .thank-you-5, .thank-you-6, .thank-you-7, .thank-you-8, .thank-you-9{
+
+    margin-top: 10px;
+    background: bisque;
+    border-radius: 5px;
+
+}
+
+.pet-info .msg{
+
+   padding: 25px;
+   margin-bottom: 0;
+   font-size: 1.3rem;
+
+}
+
+
+#donate{
+
+    width: 100%;
+    background: #fff;
+
+}
+
+#donate .container h1{
+
+    padding-top:1.3rem;
+    font-weight: lighter;
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+
+}
+
+
+#contact{
+
+    width: 100%;
+    background: #fff;
+
+}
+
+#contact .container h1{
+
+    padding-top:1.3rem;
+    font-weight: lighter;
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+
+
+}
+
+.video-banner{
+
+    width: 100%;
+    height: 300px;
+    border: 1px solid bisque;
+
+}
+
+.video-banner iframe{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.help{
+
+    font-size: 1.75rem;
+    font-weight: lighter;
+    margin-top: 1.75rem;
+}
+
+#donate .container .help-container{
+
+    border: 2px solid bisque;
+   
+    margin: 1.75rem 0;
+
+}
+
+#donate .container p{
+
+    margin: 1.75rem 0;
+    padding: 0 1.85rem;
+
+}
+
+
+
+.form-container{
+
+    max-width: 768px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#donate-form form{
+
+    background: bisque;
+    padding: 20px;
+    margin-bottom: 3rem;
+
+}
+
+#donate-form form .flex-form{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+
+
+}
+
+.flex-form .first-info, .flex-form .second-info{
+
+    flex-basis: 50%;
+
+}
+
+#donate-form form label{
+
+    display: block;
+    text-align: left;
+    width: 65%;
+    margin: 0 auto 1.15rem;
+
+}
+
+#donate-form form input[type="text"], #donate-form form input[type="email"]{
+
+    width: 65%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 1.25rem;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.donations{
+
+    background: lightblue;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 1.2rem auto 0;
+    width: 85%;
+
+}
+
+.donations h3{
+
+    font-weight: lighter;
+    margin-bottom: 1.3rem;
+
+}
+
+#donate-form form .donations label{
+
+    display: inline;
+    margin: 10px;
+
+}
+
+#donate-form form .donations input[type="text"]{
+
+    width: 25%
+
+}
+
+ form input[type="submit"]{
+
+    display: block;
+    margin: 1.75rem auto 0;
+    width: 25%;
+    color: bisque;
+    background: steelblue;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    font-size: 1.025rem;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+form input[type="submit"]:hover{
+
+    color: black;
+    background: skyblue;
+
+}
+
+.flex-contact{
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.flex-contact h4{
+
+    font-weight: lighter;
+    border: 2px solid bisque;
+
+}
+
+.flex-contact a{
+
+    padding: 0.75rem 1.8rem;
+    border: none;
+    background: steelblue;
+    color: bisque;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+
+
+}
+
+.flex-contact a:hover{
+
+    color: black;
+    background: skyblue;
+
+}
+
+.toggle-display{
+
+    display: none;
+
+}
+
+#form-1-anchor, #form-2-anchor, #form-3-anchor{
+
+    transform: translateY(-15vh);
+
+}
+
+.form-fill-1, .form-fill-2, .form-fill-3{
+
+    min-height: 400px;
+    background: bisque;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 1.75rem;
+
+}
+
+.feedback form{
+
+    padding: 20px;
+
+}
+
+.feedback form label{
+
+    display: block;
+    margin-bottom: 0.75rem;
+    
+
+}
+
+.feedback form input[type="text"], .feedback form input[type="email"], select{
+
+    width: 45%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 1.15rem;
+
+}
+
+textarea{
+
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+
+}
+
+

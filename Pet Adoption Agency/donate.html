@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo"><img src="img/pets.svg" alt="Pets Logo"></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="adopt.html">Adopt</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="donate">
+            <div class="container">
+                <h1>Donate</h1>
+                <div class="video-banner">
+                    <iframe src="https://www.youtube.com/embed/7Zxm2wcgeYI?autoplay=1&mute=1&enablejsapi=1"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" width="1024"
+                        height="360" allowfullscreen></iframe>
+                </div>
+
+                <div class="help-container">
+                    <h3 class="help">Everything helps.</h3>
+                    <p>As a non-profit organization, we keep our faculties stocked to take care of pets every single day
+                        from various donations from kind-hearted people like you. We don't ask for much! Just a little
+                        to
+                        keep us going and making sure these pets find a forever home.</p>
+                </div>
+            </div>
+        </section>
+        <section id="donate-form">
+            <div class="form-container">
+                <form action="http://www.WebsiteDevelopmentBook.com/FormEcho.php" method="post"
+                    onsubmit="return validateForm(firstName, lastName, address, email, cardNumber, expirationDate, cvc, radioOne, radioTwo, radioThree, radioFour, radioOther);">
+
+                    <div class=" flex-form">
+                        <div class="first-info">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstname">
+
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastname">
+                        </div>
+
+                        <div class="second-info">
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address">
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </div>
+
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardnumber">
+
+                    <label for="expirationDate">Card Expiration Date:</label>
+                    <input type="text" id="expirationDate" name="expiration">
+
+                    <label for="cvc">CVC:</label>
+                    <input type="text" id="cvc" name="cvc">
+
+                    <div class="donations">
+                        <h3>Donation Amount:</h3>
+
+                        <label for="radioOne">$ 10</label>
+                        <input type="radio" name="radio" id="radioOne" value="$ 10">
+
+                        <label for="radioTwo">$ 20</label>
+                        <input type="radio" name="radio" id="radioTwo" value="$ 20">
+
+                        <label for="radioThree">$ 30</label>
+                        <input type="radio" name="radio" id="radioThree" value="$ 30">
+
+                        <label for="radioFour">$ 50</label>
+                        <input type="radio" name="radio" id="radioFour" value="$ 50">
+
+                        <label for="radioOther">Other: </label>
+                        <input type="text" name="radioOther" onClick="radioButtonCheck();" id="radioOther">
+
+                    </div>
+
+                    <input type="submit" value="Submit Donation">
+
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="img/pets.svg" alt="Footer Logo">
+            </div>
+            <div class="hours">
+                <h3>Our Hours:</h3>
+                <ul class="footer-links">
+                    <li>Monday: 9:00 AM - 6:00 PM</li>
+                    <li>Tuesday: 9:00 AM - 6:00 PM</li>
+                    <li>Wednesday: 9:00 AM - 6:00 PM</li>
+                    <li>Thursday: 9:00 AM - 6:00 PM</li>
+                    <li>Friday: 9:00 AM - 4:00 PM</li>
+                    <li>Saturday: 10:00 AM - 8:00 PM</li>
+                    <li>Sunday: 11:00 AM - 5:00 PM</li>
+                </ul>
+
+            </div>
+            <div class="location">
+                <h3>Our Locations:</h3>
+                <br>
+                <p>1565 Berkshire Street, Brooklyn, NY.</p>
+                <br>
+                <p>981 Southbound Avenue, Bushwick, NY.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/donationValidate.js"></script>
+
+</body>
+
+</html>
